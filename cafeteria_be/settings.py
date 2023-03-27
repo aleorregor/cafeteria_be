@@ -49,7 +49,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
-
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
@@ -91,7 +90,7 @@ WSGI_APPLICATION = 'cafeteria_be.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'cafeteriadb',
+        'NAME': 'pruebaauth',
         'HOST': 'mongodb://localhost:27017/',
         'PORT': 27017,
         'ENFORCE_SCHEMA': False,
